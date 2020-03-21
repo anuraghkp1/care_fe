@@ -2,7 +2,6 @@ import React from 'react';
 import { useRoutes } from 'hookrouter';
 import TopBar from '../Components/Common/TopBar';
 
-const img = require('../img/xylem-wave.png');
 
 const routes = {
     // '/': () => <Login/>,

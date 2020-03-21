@@ -2,8 +2,6 @@ import React from 'react';
 import {useRedirect, useRoutes} from 'hookrouter';
 import Header from '../Components/Common/Header';
 // import Dashboard from '../Components/Common/Dashboard';
-
-const img  = require('../img/xylem-wave.png');
 const routes = {
     // '/': () => <Dashboard/>,
     // '/dashboard': () => <Dashboard/>,
