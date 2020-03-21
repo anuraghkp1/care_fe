@@ -7,9 +7,10 @@ import * as serviceWorker from './serviceWorker';
 import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import reducer from '../src/Redux/Reducer';
+import * as Sentry from '@sentry/browser';
 
 const store = createStore(reducer, applyMiddleware(thunk));
-
+Sentry.init({dsn: "https://1b6114b624be4dd69ed4f020e3bea4ec@sentry.io/5169790"});
 ReactDOM.render(
     <Provider store={store}>
         <App />
